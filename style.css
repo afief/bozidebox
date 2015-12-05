@@ -23,7 +23,6 @@ body {
   background-color: #efefef; }
 
 nav.main-nav {
-  min-width: 343px;
   position: fixed;
   z-index: 1000;
   left: 0px;
@@ -55,7 +54,7 @@ nav.main-nav {
           display: inline-block;
           padding: 15px;
           color: white;
-          font-family: 'Raleway', verdana, serif;
+          font-family: 'Roboto', verdana, serif;
           text-decoration: none; }
           nav.main-nav .wrapper ul li a:hover {
             background-color: rgba(0, 0, 0, 0.1); }
@@ -78,6 +77,9 @@ nav.main-nav {
         nav.main-nav .wrapper .foto:hover .fa {
           color: #eff5f7; }
 
+.nyumput {
+display: none;
+}
 .mainpage {
   margin-top: 70px; }
   .mainpage header {
@@ -85,19 +87,21 @@ nav.main-nav {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-image: url("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/1912207_10203569466181596_1969441256_o.jpg");
+    background-image: url("https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/e35/11364026_1621593698122810_604450199_n.jpg");
     height: 320px;
     background-size: cover;
     background-position: top center; }
     .mainpage header h1, .mainpage header h2 {
-      font-family: 'Raleway', verdana, serif;
+      font-family: 'Roboto', verdana, serif;
       font-weight: normal;
       color: #eff5f7;
       text-shadow: 1px 1px 0px #444;
       position: absolute; }
     .mainpage header h1 {
       bottom: 35px;
-      left: 20px; }
+      left: 20px;
+  right: 20px;
+  font-size: 1.8em; }
     .mainpage header h2 {
       font-size: medium;
       bottom: 20px;
@@ -110,7 +114,7 @@ nav.main-nav {
       margin-left: auto;
       margin-right: auto; }
       .mainpage .posts > .wrapper .post {
-        font-family: 'Raleway', verdana, serif;
+        font-family: 'Roboto', verdana, serif;
         margin: 30px 0px;
         background-color: white;
         border-bottom: 0px;
@@ -154,11 +158,16 @@ nav.main-nav {
               .mainpage .posts > .wrapper .post .wrapper .content a:hover {
                 color: initial; }
             .mainpage .posts > .wrapper .post .wrapper .content p {
-              margin: 0px 0px 2em 0px; }
+                margin: 1em 0px 1em 0px; /* afief */ }
             .mainpage .posts > .wrapper .post .wrapper .content p:last-child {
               margin: 0px 0px 1em 0px; }
+            .mainpage .posts > .wrapper .post .wrapper .content .wp-caption-text {
+font-size: small;
+    text-align: center;
+    margin: 0px;
+}
             .mainpage .posts > .wrapper .post .wrapper .content iframe, .mainpage .posts > .wrapper .post .wrapper .content img {
-              max-width: 100% !important; }
+              max-width: 100% !important;   height: inherit;}
           .mainpage .posts > .wrapper .post .wrapper ul, .mainpage .posts > .wrapper .post .wrapper ol {
             padding-left: 30px; }
           .mainpage .posts > .wrapper .post .wrapper .outerbox {
@@ -230,7 +239,7 @@ blockquote {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Raleway', verdana, serif; }
+    font-family: 'Roboto', verdana, serif; }
   .single .commentwrapper h2 {
     font-weight: normal; }
   .single .commentwrapper .comment-list {
@@ -326,7 +335,7 @@ blockquote {
       .single .commentwrapper .comment-respond .comment-form .comment-form-comment textarea {
         width: 100%;
         padding: 10px;
-        font-family: 'Raleway', verdana, serif;
+        font-family: 'Roboto', verdana, serif;
         font-size: medium; }
       .single .commentwrapper .comment-respond .comment-form .subscribe-to-comments {
         padding-top: 20px; }
@@ -340,7 +349,7 @@ blockquote {
           color: #eff5f7;
           border: solid 1px #444;
           border-bottom: solid 3px #444;
-          font-family: 'Raleway', verdana, serif;
+          font-family: 'Roboto', verdana, serif;
           font-size: large; }
       .single .commentwrapper .comment-respond .comment-form a {
         color: #2a6883;
@@ -349,7 +358,7 @@ blockquote {
     margin-top: 10px; }
 
 .searchresult h2 {
-  font-family: 'Raleway', verdana, serif;
+  font-family: 'Roboto', verdana, serif;
   color: #2a6883; }
 
 footer .pagination {
@@ -362,7 +371,7 @@ footer .pagination {
     display: table;
     clear: both; }
   footer .pagination a {
-    font-family: 'Raleway', verdana, serif;
+    font-family: 'Roboto', verdana, serif;
     color: #eff5f7;
     background-color: #2a6883;
     display: inline-block;
@@ -388,7 +397,7 @@ footer .pagination {
     margin-left: auto;
     margin-right: auto; }
     footer .search .wrapper h3 {
-      font-family: 'Raleway', verdana, serif;
+      font-family: 'Roboto', verdana, serif;
       color: #2a6883;
       text-align: center; }
     footer .search .wrapper form {
@@ -397,7 +406,7 @@ footer .pagination {
       display: block;
       margin: 0px auto; }
       footer .search .wrapper form input {
-        font-family: 'Raleway', verdana, serif;
+        font-family: 'Roboto', verdana, serif;
         width: 100%;
         padding: 10px 20px;
         margin-top: 10px; }
@@ -411,6 +420,21 @@ footer .pagination {
           display: table;
           margin: 0px auto;
           margin-top: 10px; }
+
+.subscribe-to-doi-comments {
+    float: left;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border: solid 1px #bbb;
+}
+.single .thumbnail {
+height: 250px;
+background-size: cover;
+background-position: 50% 50%;
+}
 
 @media (max-width: 620px) {
   .mainpage .posts > .wrapper .post {

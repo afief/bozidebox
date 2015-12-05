@@ -1,6 +1,7 @@
 <header>
     <h1><?php bloginfo( 'name' ); ?></h1>
     <h2><?php bloginfo( 'description' ); ?></h2>
+    <div class="nyumput">Web Developer yang gemar bermain dengan javascript dan HTML5. Namun sesekali bercanda dengan Unity dan C#. Menulis blog untuk meninggalkan jejak sebagai manusia biasa.</div>
 </header>
 
 <div class="posts" id="posts">

@@ -1,4 +1,4 @@
-/* compiled by scssphp v0.0.9 on Tue, 18 Nov 2014 12:01:47 +0700 (0.9391s) */
+/* compiled by scssphp v0.0.9 on Tue, 05 May 2015 10:52:39 -0400 (0.1457s) */
 
 * {
   margin: 0;
@@ -63,6 +63,9 @@ nav.main-nav {
         background-color: #2a6883; }
         nav.main-nav .wrapper .foto:hover .fa {
           color: #eff5f7; }
+
+.nyumput {
+  display: none; }
 
 .mainpage {
   margin-top: 70px; }

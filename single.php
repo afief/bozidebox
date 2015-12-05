@@ -5,8 +5,11 @@
 	if ( has_post_thumbnail() ) {
 		echo '<div class="singlethumbnail">';
 		echo '<div class="wrapper">';
-		echo '<div class="thumbnail">';
-		the_post_thumbnail();
+		
+		$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+		$url = $thumb['0'];
+	
+		echo '<div class="thumbnail" style="background-image: url(\'' . $url . '\');">';
 		echo '</div>';
 		echo '</div>';
 		echo '</div>';
@@ -30,6 +33,9 @@
 	<div class="commentwrapper">
 		<?php comments_template(); ?>
 	</div>
+<!-- start subscription !-->
+<?php show_subscription_checkbox(); ?>
+<!-- end of subscription !-->
 </div>
 
 <?php get_footer(); ?>
